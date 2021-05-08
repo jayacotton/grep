@@ -54,5 +54,10 @@ TESTVER.C:049:    PRINTF("BIOS ADDRESS (0X%04X)\N",*BIOSADDR-3);
 TESTVER.C:051:    FPRINTF(STDOUT,"TPA SIZE (%U.%UK)\N",TPA/1024,(TPA % 1024)/100);
 etc.
 ```
+I should point out here, that although you can type in a lower case string on the console, by the time the
+string gets to grep it will be converted to upper case.  You could use the -f option to search for lower case
+strings.
+
+
 I'm provide a prebuilt binary for this program.
 
