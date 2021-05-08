@@ -137,7 +137,7 @@ char **largv;
 	count = 0;
 	linenum = 1;
 	while (fgets(line, MAXLINE, stream)) {
-	 //   if (yflag) // in cp/m land, always go to upper case
+	    if (yflag) // in cp/m land, always go to upper case
 		stoupper(line);
 	    for (j = exprc; --j >= 0;) {
 		if (matchs(line, exprv[j], 0)) {
